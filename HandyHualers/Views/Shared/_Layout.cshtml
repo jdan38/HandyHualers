@@ -6,12 +6,17 @@
     @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
     @*<link rel="stylesheet" href="~/css/site.css" />*@
     <meta charset="utf-8">
+    <link rel="stylesheet" href="~/plugins/iview/css/iview.css" type='text/css' media='all' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="~/css/iofrm-style.css">
+    <link rel="stylesheet" type="text/css" href="~/css/iofrm-theme8.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
     <link href="~/css/master.css" rel="stylesheet">
     <link rel="stylesheet" href="~/plugins/iview/css/iview.css" type='text/css' media='all' />
     <link rel="stylesheet" href="~/plugins/iview/css/skin/style.css" type='text/css' media='all' />
-  
+    <link rel="stylesheet" href="~/css/homeslider.css" type='text/css' media='all' />
     <script type="text/javascript" src="~/js/jquery-1.11.1.min.js"></script>
     <script src="~/js/jquery-migrate-1.2.1.js"></script>
     <script src="~/js/jquery-ui.min.js"></script>
@@ -19,200 +24,204 @@
     <script src="~/js/modernizr.custom.js"></script>
 </head>
 <body>
-    <div class="navbar-header top-header">
-        <div class="container">
-            <div class="row">
-                <div class="info-top col-md-6"> Building The World More Stronger </div>
-                <div class="info-top col-md-6 text-right">
-                    <div class="social-box">
-                        <ul class="social-links">
-                            <li><a target="_blank" href="https://www.facebook.com/"><i class="icomoon-facebook"></i></a></li>
-                            <li class=""><a target="_blank" href="https://twitter.com/"><i class="icomoon-twitter"></i></a></li>
-                            <li><a target="_blank" href="https://www.google.com/"><i class="icomoon-googleplus"></i></a></li>
-                            <li class="li-last"><a target="_blank" href="https://www.pinterest.com/"><i class="icomoon-pinterest"></i></a></li>
-                            <li class="nav-item" style="padding-left:10px;">
-                                <div id="log">
-                                    <partial name="_LoginPartial" />
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-   
-    <!-- HEADER -->
-
-
-    <div class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3  col-xs-12"> <a asp-controller="Home" asp-action="Index" class="logo"> <img src="~/img/Twitter Banner.png" width="300" height="80" alt="logo" /></a> </div>
-                <div class="col-md-9  col-xs-12">
-                    <div class="right-header">
-                        <div class="col-right-header">
-                            <h5>Email Support</h5>
-                            <h4><a href="mailto:handyhaulersmd@gmail.com">handyhaulersmd@gmail.com</a></h4>
-                        </div>
-                        <div class="col-right-header">
-                            <h5>Call Support</h5>
-                            <h4>301.660.2980</h4>
-                        </div>
-                        <div class="col-right-header">
-                            <h5>Working Hours</h5>
-                            <h4>Mon - Sat 0900 - 1900</h4>
-                        </div>
-                        @*<div class="top-cart"> <a href="/"> <span class="qty-top-cart-active">3</span><i class="flaticon-shoppingbag"></i> Cart  $16.00 </a> </div>*@
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="top-nav ">
+    <div class="layout-theme animated-css" data-header="sticky" data-header-top="200">
+        <div class="navbar-header top-header">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12  col-xs-12">
-                        <form class="hidden-md  hidden-lg " id="search-global-mobile" method="get">
-                            <input type="text" value="" id="search-mobile" name="s">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
-                        <div class="navbar yamm ">
-                            <div class="navbar-header hidden-md  hidden-lg  hidden-sm ">
-                                <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-                                <a href="Index" class="navbar-brand">Menu</a>
+                    <div class="info-top col-md-6">  </div>
+                    <div class="info-top col-md-6 text-right">
+                        <div class="social-box">
+                            <ul class="social-links">
+                                <li><a target="_blank" href="https://www.facebook.com/Handy-Haulers-105436351525057"><i class="icomoon-facebook"></i></a></li>
+                                @*<li class=""><a target="_blank" href="https://twitter.com/"><i class="icomoon-twitter"></i></a></li>*@
+                                <li><a target="_blank" href="handy-haulers-junk-removal.business.site"><i class="icomoon-googleplus"></i></a></li>
+                                <li class="li-last"><a target="_blank" href="http://www.pinterest.com/"><i class="icomoon-pinterest"></i></a></li>
+                                <li class="nav-item" style="padding-left:10px;">
+                                    @*<div id="log">
+                                            <partial name="_LoginPartial" />
+                                        </div>*@
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- HEADER -->
+
+
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3  col-xs-12"> <a asp-controller="Home" asp-action="Index" class="logo"> <img src="~/img/handyhaulers letter logo.png" width="300" height="80" alt="logo" /></a> </div>
+                    <div class="col-md-9  col-xs-12">
+                        <div class="right-header">
+                            <div class="col-right-header">
+                                <h5>Email Support</h5>
+                                <h4><a href="mailto:handyhaulersmd@gmail.com">handyhaulersmd@gmail.com</a></h4>
                             </div>
-                            <div id="navbar-collapse-1" class="navbar-collapse collapse">
-                                <ul class="nav navbar-nav">
-                                    <li>
-                                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">HOME</a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Junk">JUNK REMOVAL</a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Demolition">DEMOLITION</a>
-                                    </li>
-                                    <li>
-                                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contact">CONTACT US</a>
-                                    </li>
+                            <div class="col-right-header">
+                                <h5>Call Support</h5>
+                                <h4>301.660.2980</h4>
+                            </div>
+                            <div class="col-right-header">
+                                <h5>Working Hours</h5>
+                                <h4>Mon - Sat 0900 - 1900</h4>
+                            </div>
+                            @*<div class="top-cart"> <a href="/"> <span class="qty-top-cart-active">3</span><i class="flaticon-shoppingbag"></i> Cart  $16.00 </a> </div>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top-nav ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12  col-xs-12">
+                            <form class="hidden-md  hidden-lg " id="search-global-mobile" method="get">
+                                <input type="text" value="" id="search-mobile" name="s">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                            <div class="navbar yamm ">
+                                <div class="navbar-header hidden-md  hidden-lg  hidden-sm ">
+                                    <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                                    <a href="Index" class="navbar-brand">Menu</a>
+                                </div>
+                                <div id="navbar-collapse-1" class="navbar-collapse collapse">
+                                    <ul class="nav navbar-nav">
+                                        <li>
+                                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">HOME</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Junk">JUNK REMOVAL</a>
+                                        </li>
+                                        @*<li>
+                                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Demolition">DEMOLITION</a>
+                                            </li>*@
+                                        <li>
+                                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Appointment"> Book An Appointment</a>
+                                        </li>
+                                        <li>
+                                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contact">CONTACT US</a>
+                                        </li>
 
-                                </ul>
+                                    </ul>
 
 
 
 
-                                <form id="search-global-menu" method="get">
-                                    <input type="text" value="" id="search" name="s">
-                                    <button type="submit"><i class="fa fa-search"></i></button>
-                                </form>
+                                    <form id="search-global-menu" method="get">
+                                        <input type="text" value="" id="search" name="s">
+                                        <button type="submit"><i class="fa fa-search"></i></button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- HEADER END -->
+        <!-- HEADER END -->
 
-    @RenderBody()
+        @RenderBody()
 
 
-    <footer class="footer footer-shop">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="fot-box">
-                        <h3 class="fot-logo"><img src="~/img/Twitter Banner.png" alt="logo"></h3>
-                        <p>
-                            Mollis semper lobortis vitae phasellus tu
-                            rpis commodo libero vamus sed dolor do
-                            nec turpis. Praesent sit amet non magna
-                            vel diam trum elementum.
-                        </p>
-                        <p>Suspendisse congue sapien vestib massa posuere lacinia.</p>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12">
-                            <div class="social-box">
-                                <ul class="social-links">
-                                    <li><a target="_blank" href="https://www.facebook.com/"><i class="icomoon-facebook"></i></a></li>
-                                    <li class=""><a target="_blank" href="https://twitter.com/"><i class="icomoon-twitter"></i></a></li>
-                                    <li><a target="_blank" href="https://www.google.com/"><i class="icomoon-googleplus"></i></a></li>
-                                    <li class="li-last"><a target="_blank" href="https://www.pinterest.com/"><i class="icomoon-pinterest"></i></a></li>
-                                </ul>
-                            </div>
+        <footer class="footer footer-shop">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="fot-box">
+                            <h3 class="fot-logo"><img src="~/img/Twitter Banner.png" alt="logo"></h3>
+                            <p>
+                                Mollis semper lobortis vitae phasellus tu
+                                rpis commodo libero vamus sed dolor do
+                                nec turpis. Praesent sit amet non magna
+                                vel diam trum elementum.
+                            </p>
+                            <p>Suspendisse congue sapien vestib massa posuere lacinia.</p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="fot-box">
-                        <h3 class="fot-title">COMPANY PAGES</h3>
                         <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                <ul>
-                                    <li> <a href="#"> Home</a></li>
-                                    <li> <a href="#"> Features</a></li>
-                                    <li> <a href="#"> Projects</a></li>
-                                    <li> <a href="#"> Our Services</a></li>
-                                    <li> <a href="#"> Contact Us</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                <ul>
-                                    <li> <a href="#"> About Us</a></li>
-                                    <li> <a href="#">Shop</a></li>
-                                    <li> <a href="#">Our Blog</a></li>
-                                </ul>
+                            <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12">
+                                <div class="social-box">
+                                    <ul class="social-links">
+                                        <li><a target="_blank" href="https://www.facebook.com/"><i class="icomoon-facebook"></i></a></li>
+                                        <li class=""><a target="_blank" href="https://twitter.com/"><i class="icomoon-twitter"></i></a></li>
+                                        <li><a target="_blank" href="https://www.google.com/"><i class="icomoon-googleplus"></i></a></li>
+                                        <li class="li-last"><a target="_blank" href="https://www.pinterest.com/"><i class="icomoon-pinterest"></i></a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="fot-box">
-                        <h3 class="fot-title">Contact Us</h3>
-                        <div class="fot-contact">
-                            <div class="media-body">
-                                <table>
-                                    <tr>
-                                        <td><i class="fa fa-map-marker"></i></td>
-                                        <td>
-                                            Baltimore MD, 21230
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fa fa-phone"></i></td>
-                                        <td>301.660.2980</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fa fa-envelope"></i></td>
-                                        <td><a href="mailto:contact.us@domain.com">contact.us@domain.com</a></td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fa fa-fax"></i></td>
-                                        <td>123.456.0000</td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fa fa-clock-o"></i></td>
-                                        <td>
-                                            Mon - Sat : 0900 - 1900<br>
-                                            Sun : Closed
-                                        </td>
-                                    </tr>
-                                </table>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="fot-box">
+                            <h3 class="fot-title">COMPANY PAGES</h3>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                    <ul>
+                                        <li> <a asp-controller="Home" asp-action="Index"> Home</a></li>
+                                        <li> <a asp-controller="Home" asp-action="Junk"> Junk Removal</a></li>
+                                        <li> <a asp-controller="Home" asp-action="Demolistion"> Demolition</a></li>
+                                        <li> <a asp-controller="Home" asp-action="Appointment"> Book An Appointment</a></li>
+                                        <li> <a asp-controller="Home" asp-action="Contact"> Contact Us</a></li>
+                                    </ul>
+                                </div>
+                                @*<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <ul>
+                                            <li> <a href="#"> About Us</a></li>
+                                            <li> <a href="#">Shop</a></li>
+                                            <li> <a href="#">Our Blog</a></li>
+                                        </ul>
+                                    </div>*@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="fot-box">
-                        <h3 class="fot-title">INSTAGRAM FEED</h3>
-                        <!-- Flickr-->
-                        <script src="~/plugins/jflickrfeed/jflickrfeed.min.js"></script>
-                        <script type="text/javascript">
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="fot-box">
+                            <h3 class="fot-title">Contact Us</h3>
+                            <div class="fot-contact">
+                                <div class="media-body">
+                                    <table>
+                                        <tr>
+                                            <td><i class="fa fa-map-marker"></i></td>
+                                            <td>
+                                                Baltimore MD, 21230
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-phone"></i></td>
+                                            <td>301.660.2980</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-envelope"></i></td>
+                                            <td><a href="mailto:contact.us@domain.com">contact.us@domain.com</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-fax"></i></td>
+                                            <td>301.660.2980</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-clock-o"></i></td>
+                                            <td>
+                                                Mon - Sat : 0900 - 1900<br>
+                                                Sun : Closed
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="fot-box">
+                            <h3 class="fot-title">INSTAGRAM FEED</h3>
+                            <!-- Flickr-->
+                            <script src="~/plugins/jflickrfeed/jflickrfeed.min.js"></script>
+                            <script type="text/javascript">
 
 
 
@@ -279,44 +288,59 @@ $(document).ready(function($) {
 
 
 
-                        </script>
-                        <div class="fot-contact">
-                            <div class="media-body">
-                                <ul id="flickr-feed" class="flickr-feed">
-                                </ul>
+                            </script>
+                            <div class="fot-contact">
+                                <div class="media-body">
+                                    <ul id="flickr-feed" class="flickr-feed">
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <div class="footer-absolute">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="copy aligncenter">
-                        <p> Strongly Built by <a href="http://templines.com/" target="_blank">Templines</a> Powered by <a href="https://wordpress.org/" target="_blank">Wordpress</a> &nbsp;  © 2015 All rights reserved. </p>
+        </footer>
+        <div class="footer-absolute">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="copy aligncenter">
+                            <p> Strongly Built by <a href="http://aws.com/" target="_blank">AT</a> Powered by <a href="https://aws.com/" target="_blank">Amazon Web Services</a> &nbsp;  © 2015 All rights reserved. </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <script>
+        (function () {
+            function async() {
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+                var u = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'www.markate.com/public/widget/booking/js';
+                var t = Math.random() * 10000000000000000;
+                s.src = u + '?id=5ee8515b709681798815a428f1dcf2a7:24945:e7d849ad&ref=' + encodeURIComponent(window.location.href) + '&t=' + t;
+                var w = document.getElementById('markate-widget-booking'); w.parentNode.insertBefore(s, w);
+            } if (window.attachEvent) { window.attachEvent('onload', async); } else { window.addEventListener('load', async, false); }
+        })();</script>
+
     <a class="scroll-top "> <i class="fa fa-angle-up"> </i></a>
     <!--HOME SLIDER-->
-    <script src="plugins/iview/js/iview.js"></script>
+    <script src="~/plugins/iview/js/iview.js"></script>
 
     <!-- SCRIPTS -->
+    <!--Contact form-->
+    <script src="~/plugins/contact/jqBootstrapValidation.js"></script>
+    <script src="~/plugins/contact/contact_me.js"></script>
     <script type="text/javascript" src="plugins/isotope/jquery.isotope.min.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="plugins/bxslider/jquery.bxslider.min.js"></script>
-    <script src="plugins/magnific/jquery.magnific-popup.js"></script>
-    <script src="plugins/prettyphoto/js/jquery.prettyPhoto.js"></script>
-    <script src="js/classie.js"></script>
+    <script src="~/js/waypoints.min.js"></script>
+    <script src="~/plugins/bxslider/jquery.bxslider.min.js"></script>
+    <script src="~/plugins/magnific/jquery.magnific-popup.js"></script>
+    <script src="~/plugins/prettyphoto/js/jquery.prettyPhoto.js"></script>
+    <script src="~/js/classie.js"></script>
     <!--THEME-->
-    <script src="js/cssua.min.js"></script>
-    <script src="js/custom.js"></script>
-    @*@RenderSection("Scripts", required: false)*@
+    <script src="~/js/cssua.min.js"></script>
+    <script src="~/js/custom.js"></script>
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

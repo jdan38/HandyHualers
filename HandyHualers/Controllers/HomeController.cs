@@ -32,6 +32,11 @@ namespace HandyHualers.Controllers
             return View();
         }
 
+        public IActionResult Appointment()
+        {
+            return View();
+        }
+
         public IActionResult Contact()
         {
             return View();

@@ -1,0 +1,67 @@
+﻿@page
+@model RegisterModel
+
+
+<div class="form-body">
+    <div class="website-logo">
+        <a href="index.html">
+            <div class="logo">
+                <img class="logo-size" src="~/img/logo-light.svg" alt="">
+            </div>
+        </a>
+    </div>
+    <div class="row">
+        <div class="img-holder">
+            <div class="bg"></div>
+            <div class="info-holder">
+                <h3>Get more things done with Loggin platform.</h3>
+                <p>Access to the most powerfull tool in the entire design and web industry.</p>
+                <img src="~/img/graphic4.svg" alt="">
+            </div>
+        </div>
+        <div class="form-holder">
+            <div class="form-content">
+                <div class="form-items">
+                    <div class="website-logo-inside">
+                        <a href="index.html">
+                            <div class="logo">
+                                <img class="logo-size" src="~/img/logo-light.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="page-links">
+                        <a asp-area="Identity" asp-page="/Account/Login">Login</a><a asp-area="Identity" asp-page="/Account/Register" class="active">Register</a>
+                    </div>
+                    <form method="post" asp-route-returnUrl="@Model.ReturnUrl">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <input class="form-control" type="text" asp-for="Input.Fname" placeholder="First Name" required>
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                        <input class="form-control" type="text" asp-for="Input.Lname" placeholder="Last Name" required>
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                        <input class="form-control" type="text" asp-for="Input.StreetAddress" placeholder="Street Address">
+                        <input class="form-control" type="text" asp-for="Input.City" placeholder="City" required>
+                        <input class="form-control" type="text" asp-for="Input.PostalCode" placeholder="Zip Code">
+                        <input class="form-control" type="text" asp-for="Input.PhoneNumber" placeholder="Phone Number">
+
+
+                        <input class="form-control" type="email" name="email" asp-for="Input.Email" placeholder="E-mail Address" required>
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+                        <input class="form-control" type="password" name="password" asp-for="Input.Password" placeholder="Password" required>
+                        <span asp-validation-for="Input.Password" class="text-danger"></span>
+
+                        <div class="form-button">
+                            <button id="submit" type="submit" class="ibtn">Register</button>
+                        </div>
+                    </form>
+                    <div class="other-links">
+                        <span>Or register with</span><a href="#">Facebook</a><a href="#">Google</a><a href="#">Linkedin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
